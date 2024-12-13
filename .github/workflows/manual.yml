@@ -16,13 +16,14 @@ jobs:
         cache-dependency-glob: "**/pyproject.toml"
         python-version: "3.10"
 
-    - name: UV Sync
-      run: |
-        uv sync
+    - name: Cache APT packages
+      uses: actions/cache@v4
+      with:
+        path: /var/cache/apt/archives/*.deb
+        key: apt-cache-${{ runner.os }}
+        restore-keys: apt-cache-${{ runner.os }}
 
-    - name: Run pytest
+    - name: Install FFmpeg
       run: |
-        sudo apt update
-        ls -alF /var/cache/apt/archives
-        uv add --dev pytest
-        uv run pytest
+        sudo apt-get update
+        sudo apt-get install -y ffmpeg
