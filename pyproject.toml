@@ -9,6 +9,7 @@ dependencies = ["emoji",]
 
 [tool.pytest.ini_options]
 addopts = ["-v", "--import-mode=importlib",]
+pythonpath = [".",]
 testpaths = ["tests",]
 
 [dependency-groups]
