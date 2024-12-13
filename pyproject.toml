@@ -5,9 +5,9 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "learning_project"
 version = "0.1.0"
-dependencies = ["numpy",]
+dependencies = ["emoji",]
 
 [tool.pytest.ini_options]
 addopts = "-v"
 testpaths = ["tests"]
-pythonpath = ["src"]
+

@@ -1,4 +1,4 @@
-import sys, numpy
+import sys, emoji
 
 def print_path():
     print('\n'.join(sys.path))

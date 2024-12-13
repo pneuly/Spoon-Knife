@@ -22,4 +22,4 @@ jobs:
     - name: Run pytest
       run: |
         uv tool install pytest
-        uv run pytest
+        uvx pytest
