@@ -5,6 +5,9 @@ on:
 
 jobs:
   run-tests:
+    env:
+      UV_SYSTEM_PYTHON : 1
+
     runs-on: ubuntu-latest
 
     steps:
@@ -19,12 +22,8 @@ jobs:
     - name: UV Sync
       run: |
         uv sync
-      env:
-        UV_SYSTEM_PYTHON : true
 
     - name: Run pytest
       run: |
         uv tool install pytest
         uvx pytest
-      env:
-        UV_SYSTEM_PYTHON : true
