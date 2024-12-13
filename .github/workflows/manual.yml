@@ -27,4 +27,4 @@ jobs:
       run: |
         uv tool install pytest
         ls -alF /home/runner/.local/share/uv/tools/pytest/lib/python3.10/site-packages
-        uv run --frozen pytest
+        python -m pytest -svv
