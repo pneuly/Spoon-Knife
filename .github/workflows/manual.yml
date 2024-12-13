@@ -19,7 +19,6 @@ jobs:
     - name: UV Sync
       run: |
         uv sync
-        uv add emoji
       env:
         UV_SYSTEM_PYTHON : true
 
@@ -27,3 +26,5 @@ jobs:
       run: |
         uv tool install pytest
         uvx pytest
+      env:
+        UV_SYSTEM_PYTHON : true
