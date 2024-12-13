@@ -26,4 +26,4 @@ jobs:
     - name: Run pytest
       run: |
         uv tool install pytest
-        uvx --frozen pytest
+        uv --frozen run pytest
