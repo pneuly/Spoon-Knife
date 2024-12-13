@@ -19,6 +19,7 @@ jobs:
     - name: UV Sync
       run: |
         uv sync
+        uv add emoji
       env:
         UV_SYSTEM_PYTHON : true
 
