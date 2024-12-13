@@ -8,6 +8,6 @@ version = "0.1.0"
 dependencies = ["emoji",]
 
 [tool.pytest.ini_options]
-addopts = "-v"
-testpaths = ["tests"]
-
+addopts = ["-v", "--import-mode=importlib",]
+pythonpath = [".", ".venv/Lib/site-packages",]
+testpaths = ["tests",]
