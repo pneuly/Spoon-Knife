@@ -1,4 +1,4 @@
-from src.sample import add, subtract, print_path
+from learning_project.sample import add, subtract, print_path
 
 def test_add(sample_numbers):
     print_path()
