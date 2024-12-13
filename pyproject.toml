@@ -9,5 +9,9 @@ dependencies = ["emoji",]
 
 [tool.pytest.ini_options]
 addopts = ["-v", "--import-mode=importlib",]
-pythonpath = [".", ".venv/Lib/site-packages",]
 testpaths = ["tests",]
+
+[dependency-groups]
+dev = [
+    "emoji>=2.14.0",
+]
