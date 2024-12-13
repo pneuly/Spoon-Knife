@@ -23,6 +23,6 @@ jobs:
     - name: Run pytest
       run: |
         sudo apt update
-        ls -alF /var/cache/apt
+        ls -alF /var/cache/apt/archives
         uv add --dev pytest
         uv run pytest
