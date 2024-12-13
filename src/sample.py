@@ -1,4 +1,4 @@
-import sys
+import sys, numpy
 
 def print_path():
     print('\n'.join(sys.path))
